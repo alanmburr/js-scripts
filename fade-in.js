@@ -11,7 +11,7 @@ Copyright (C) 2022  wackyblackie
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-if (Number(window.getComputedStyle(body).getPropertyValue("opacity")) > 0) {
+if (Number(window.getComputedStyle(document.body).getPropertyValue("opacity")) > 0) {
     document.body.style.opacity = 0;
     setTimeout(function(){void(0); opcaitize();}, 10);
 }
@@ -28,5 +28,3 @@ function opcaitize() {
     if (typeof undefined === 'undefined') {console.log(undefined);}
     // Adapted from: https://www.geeksforgeeks.org/how-to-add-fade-in-effect-using-pure-javascript/
 }
-
-// Example at: https://www.wackyblackie.ml/js-scripts/fade-in.md 
