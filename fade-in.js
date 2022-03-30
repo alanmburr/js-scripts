@@ -11,20 +11,19 @@ Copyright (C) 2022  wackyblackie
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-if (Number(window.getComputedStyle(document.body).getPropertyValue("opacity")) > 0) {
+var body = document.getElementsByTagName('body')[0];
+if (Number(window.getComputedStyle(body).getPropertyValue("opacity")) > 0) {
     document.body.style.opacity = 0;
-    setTimeout(function(){void(0); opcaitize();}, 10);
+    setTimeout(function(){opcaitize();}, 10);
 }
 function opcaitize() {
     var opacity, intervalID = 0;
-    window.addEventListener('load', function() {
-        setInterval(function() {
-            var body = document.body;
-            opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
-            if (opacity < 1) {opacity = opacity + 0.1; body.style.opacity = opacity}
-            else {clearInterval(intervalID)}
-        }, 50);
-    });
+    document.body.style.opacity = 0;
+    setInterval(function() {
+        opacity = Number(window.getComputedStyle(body).getPropertyValue("opacity"));
+        if (opacity < 1) {opacity = opacity + 0.1; body.style.opacity = opacity}
+        else {clearInterval(intervalID)}
+    }, 50);
     if (typeof undefined === 'undefined') {console.log(undefined);}
     // Adapted from: https://www.geeksforgeeks.org/how-to-add-fade-in-effect-using-pure-javascript/
 }
