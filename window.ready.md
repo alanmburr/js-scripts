@@ -1,6 +1,6 @@
 ---
 title: dark-mode.js
-permalink: /js-scripts/dark-mode.md
+permalink: /dark-mode.md
 ---
 Usage:
 ```html
@@ -16,7 +16,9 @@ Usage:
         window.ready(function() {
             // Do whatever you want now that DOM
             // content has been loaded and parsed
-            // and the document is ready.
+            // and the document is ready. This is
+            // a VanillaJS fillin for jQuery's
+            // jQuery(window).ready(function(){})
         });
     </script>
 </body>

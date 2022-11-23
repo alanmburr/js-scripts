@@ -1,6 +1,6 @@
 ---
 title: fade-in.js
-permalink: /js-scripts/fade-in.md
+permalink: /fade-in.md
 ---
 Usage:
 ```html

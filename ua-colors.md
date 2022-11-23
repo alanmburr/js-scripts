@@ -1,6 +1,6 @@
 ---
 title: ua-colors.js
-permalink: /js-scripts/ua-colors.md
+permalink: /ua-colors.md
 ---
 Usage:
 ```html

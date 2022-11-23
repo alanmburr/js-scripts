@@ -1,6 +1,6 @@
 ---
 title: detect-adblock.js
-permalink: /js-scripts/detect-adblock.md
+permalink: /detect-adblock.md
 ---
 Usage:
 ```html

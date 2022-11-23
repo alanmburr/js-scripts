@@ -1,6 +1,6 @@
 ---
 title: dark-mode.js
-permalink: /js-scripts/dark-mode.md
+permalink: /dark-mode.md
 ---
 Usage:
 ```html
